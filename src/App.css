@@ -17,6 +17,8 @@
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
   background-color: var(--primary-light);
+  display: flex;
+  flex-direction: column;
 }
 
 .home-page {

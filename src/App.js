@@ -4,8 +4,8 @@ import CustomerForm from './components/CustomerForm';
 import CustomerLogin from './components/CustomerLogin';
 import CustomerPanel from './components/CustomerPanel';
 import HairDesignCarousel from './components/HairDesignCarousel';
-
 import BusinessDashboard from './components/BusinessDashboard';
+import Footer from './components/Footer';
 import logo from './assets/logo.svg';
 import './App.css';
 
@@ -20,7 +20,6 @@ function App() {
     setLoggedInCustomer(null);
   };
 
-  // Eğer müşteri giriş yapmışsa, müşteri panelini göster
   if (loggedInCustomer) {
     return (
       <CustomerPanel 
@@ -77,6 +76,7 @@ function App() {
               <div className="carousel-section">
                 <HairDesignCarousel />
               </div>
+              <Footer />
             </div>
           } />
           <Route path="/customer-register" element={<CustomerForm />} />
