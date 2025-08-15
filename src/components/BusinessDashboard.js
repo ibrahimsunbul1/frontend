@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './BusinessDashboard.css';
 import SockJS from 'sockjs-client';
 import { Client } from '@stomp/stompjs';
+import logo from '../assets/logo.svg';
 
 const BusinessDashboard = () => {
   const [appointments, setAppointments] = useState([]);
@@ -184,7 +185,11 @@ const BusinessDashboard = () => {
   return (
     <div className="business-dashboard">
       <header className="dashboard-header">
-        <h1>İşletme Yönetim Paneli</h1>
+        <h1>
+          <img src={logo} alt="Logo" className="dashboard-logo dashboard-logo-start" />
+          İşletme Yönetim Paneli
+          <img src={logo} alt="Logo" className="dashboard-logo dashboard-logo-end" />
+        </h1>
         <p>Randevularınızı yönetin ve takip edin</p>
       </header>
 

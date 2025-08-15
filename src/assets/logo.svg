@@ -1,0 +1,30 @@
+<svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Berber makinesi gövdesi -->
+  <rect x="70" y="40" width="60" height="80" rx="8" fill="#D4AF37" stroke="#B8860B" stroke-width="2"/>
+  
+  <!-- Berber makinesi dişleri -->
+  <rect x="75" y="30" width="6" height="15" fill="#B8860B"/>
+  <rect x="83" y="30" width="6" height="15" fill="#B8860B"/>
+  <rect x="91" y="30" width="6" height="15" fill="#B8860B"/>
+  <rect x="99" y="30" width="6" height="15" fill="#B8860B"/>
+  <rect x="107" y="30" width="6" height="15" fill="#B8860B"/>
+  <rect x="115" y="30" width="6" height="15" fill="#B8860B"/>
+  <rect x="123" y="30" width="6" height="15" fill="#B8860B"/>
+  
+  <!-- Berber makinesi kablosu -->
+  <path d="M100 120 Q120 140 140 160 Q160 180 180 170" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- Ustura -->
+  <g transform="rotate(25 150 150)">
+    <rect x="140" y="145" width="40" height="8" rx="4" fill="#D4AF37"/>
+    <rect x="180" y="147" width="25" height="4" fill="#C0C0C0"/>
+  </g>
+  
+  <!-- Dekoratif çember -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Animasyon için parıltı efekti -->
+  <circle cx="85" cy="60" r="3" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

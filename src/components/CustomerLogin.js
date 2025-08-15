@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CustomerLogin.css';
+import logo from '../assets/logo.svg';
 
 function CustomerLogin({ onLoginSuccess }) {
   const [formData, setFormData] = useState({
@@ -49,7 +50,11 @@ function CustomerLogin({ onLoginSuccess }) {
   return (
     <div className="customer-login">
       <div className="login-container">
-        <h2>Müşteri Girişi</h2>
+        <h2>
+          <img src={logo} alt="Logo" className="login-logo login-logo-start" />
+          Müşteri Girişi
+          <img src={logo} alt="Logo" className="login-logo login-logo-end" />
+        </h2>
         
         {error && <div className="error-message">{error}</div>}
         
